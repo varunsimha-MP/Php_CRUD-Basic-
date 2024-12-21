@@ -20,7 +20,7 @@ $sql="INSERT INTO personalinfo (firstname,lastname,usn,branch,semester,gender,ma
 if($conn->query($sql)===TRUE){
   header("Location:delete.php");
 }else{
-  echo "Error".$sql"<br>".$conn->error;
+  echo "Error".$sql."<br>".$conn->error;
 }
 $conn->close();
 ?>
